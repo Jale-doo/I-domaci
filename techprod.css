@@ -1,27 +1,179 @@
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    font-family: consolas;
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
 
-a{
-    float: right;
-    display: flex;
-    padding: 8px;
-    color: black;
-
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
 }
-#abtech {
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 6vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay; 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar_links{
+    background:white;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar{
+    width:100%;
+    overflow: hidden;
+    height:70px;
+    line-height: 70px;
+    background: #fff;
+    border-bottom: 2px solid blue;
+}
+
+.logo{
     float: left;
 }
+
+/*this is for ul tag */
+
+.menu{
+    float:right;
+}
+
+.menu li{
+    float: left;
+    width: 90px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    text-align: center;
+    font-family: consolas;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(47, 47, 161);
+    display: block;
+}
+
+.menu li:hover{
+    background: rgb(204, 181, 181);
+}
+
+.menu li a:hover{
+    color: #fff;
+}
+
+.shoppingcart{
+    width: 50px;
+    position:center;
+}
+
+.shoppingcart:hover{
+    background: rgb(255, 255, 255);
+}
+
+#logitech{
+    color: rgb(105, 101, 101);
+    font-size: 60px;
+}
+
+
+.viewmore{
+    margin-top: 13%;
+    margin-left: 45%;
+    position: center;
+    border-color: black;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(53, 53, 172), rgb(174, 174, 231));
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.viewmore a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 #ourserv {
     display: grid;
     text-align: center;
 }
+
 
 #aaa {
     display: grid;
@@ -32,28 +184,25 @@ a{
 
 }
 
-img {
-    width:150px;
-}
-.container {
+.container1 {
     width:1000px;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.container .card {
+.container1 .card {
     position: relative;
     padding: 20px;
 }
 
-.container .card .face {
+.container1 .card .face {
     width: 300px;
     height: 250px;
     transition: 0.5s;
 }
 
-.container .card .face.face1 {
+.container1 .card .face.face1 {
     position: relative;
     background: #333;
     display: flex;
@@ -64,7 +213,7 @@ img {
     transform: translateY(100px); 
 }
 
-.container .card .face.face2 {
+.container1 .card .face.face2 {
     position: relative;
     background: #fff;
     display: flex;
@@ -77,13 +226,13 @@ img {
     transform: translateY(-150px); 
 }
 
-.container .card .face.face2 .content p {
+.container1 .card .face.face2 .content p {
     padding: 0;
     margin: 0;
     align-content: center;
 }
 
-.container .card .face.face2 .content a {
+.container1 .card .face.face2 .content a {
     margin: 15px 0 0;
     display: inline-block;
     text-decoration: none;
@@ -95,37 +244,38 @@ img {
 
 }
 
-.container .card .face.face2 .content a:hover {
+.container1 .card .face.face2 .content a:hover {
     background: #333;
     color: #fff;
 }
 
-.container .card .face.face1 .content {
+.container1 .card .face.face1 .content {
     opacity: 0.2;
     transition: 0.5s;
 }
 
-.container .card:hover .face.face1 .content {
+.container1 .card:hover .face.face1 .content {
     opacity: 1;
     transition: 0.5s;
 }
 
-.container .card:hover .face.face1 .content img {
+.container1 .card:hover .face.face1 .content img {
     max-width: 100px;
 }
 
-.container .card:hover .face.face1 .content h3 {
+.container1 .card:hover .face.face1 .content h3 {
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
     text-align:center
 }
 
-.container .card:hover .face.face1 {
+.container1 .card:hover .face.face1 {
     background: #ff0057;
     transform: translateY(0); 
 }
 
-.container .card:hover .face.face2 {
+.container1
+ .card:hover .face.face2 {
     transform: translateY(0); 
 }
