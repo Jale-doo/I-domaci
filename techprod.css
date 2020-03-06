@@ -3,7 +3,7 @@
     padding:0;}
 body{
     display: grid;
-    background: rgb(223, 208, 208);
+    background: rgb(236, 227, 227);
 }
 .navbar_links{
     background:white;}
@@ -261,10 +261,25 @@ body{
 }
 
 .buttonview {
-    background: linear-gradient(180deg, white, rgb(223, 208, 208));
-    height: 50px;
+    background: linear-gradient(180deg, white, rgb(236, 227, 227));
+    height: 50px;}
+.gradient {
+    background: linear-gradient(180deg, rgb(236, 227, 227), white);}
+.group3 {
+    display: flex;
+    background-color: white;}
+
+.group3 img {margin-right: 10px;}
+.video2 {
+    top: 20%;
+    margin-left: 250px;}
+
+.videotext {
+    display: grid;
 }
 
-.gradient {
-    background: linear-gradient(180deg, rgb(223, 208, 208), white);
-}
+.videotext h1{width: 60%;}
+.videotext p{width: 60%;}
+
+.gradient2 {
+    background: linear-gradient(180deg, white, rgb(236, 227, 227));}
