@@ -3,7 +3,7 @@
     padding:0;}
 body{
     display: grid;
-    background: rgb(236, 226, 226);
+    background: rgb(223, 208, 208);
 }
 .navbar_links{
     background:white;}
@@ -178,7 +178,7 @@ body{
     background: #333;
     color: #fff;}
 .cont .card .face.face1 .content {
-    opacity: 0.5;
+    opacity: 0.2;
     transition: 0.5s;}
 .cont .card:hover .face.face1 .content {
     opacity: 1;
@@ -191,10 +191,10 @@ body{
     color: #fff;
     text-align:center}
 .cont .card:hover .face.face1 {
-    background:linear-gradient(90deg, rgb(122, 122, 219), rgb(170, 170, 247));
+    background:linear-gradient(90deg, rgb(81, 81, 202), rgb(124, 124, 207));
     transform: translateY(0); }
 .cont .card:hover .face.face2 {
-    transform: translateY(0); background:linear-gradient(90deg, rgb(170, 170, 247), rgb(122, 122, 219));}
+    transform: translateY(0); background:linear-gradient(90deg, rgb(124, 124, 207), rgb(81, 81, 202));}
 
 .container1 {
     width:100%;
@@ -241,7 +241,7 @@ body{
     background: #333;
     color: #fff;}
 .container1 .card .face.face1 .content {
-    opacity: 0.5;
+    opacity: 0.2;
     transition: 0.5s;}
 .container1 .card:hover .face.face1 .content {
     opacity: 1;
@@ -254,11 +254,10 @@ body{
     color: #fff;
     text-align:center}
 .container1 .card:hover .face.face1 {
-    background:linear-gradient(90deg, rgb(122, 122, 219), rgb(170, 170, 247));
+    background: #b99ca6 ;
     transform: translateY(0); }
 .container1 .card:hover .face.face2 {
-    transform: translateY(0); background:linear-gradient(90deg, rgb(170, 170, 247), rgb(122, 122, 219));
-}
+    transform: translateY(0); }
 
 .buttonview {
     background: linear-gradient(180deg, white, rgb(223, 208, 208));
