@@ -3,7 +3,7 @@
     padding:0;}
 body{
     display: grid;
-    background: rgb(236, 226, 226);
+    background: rgb(223, 208, 208);
 }
 .navbar_links{
     background:white;}
@@ -263,4 +263,8 @@ body{
 .buttonview {
     background: linear-gradient(180deg, white, rgb(223, 208, 208));
     height: 50px;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgb(223, 208, 208), white);
 }
