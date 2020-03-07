@@ -15,7 +15,7 @@ body{
     height:70px;
     line-height: 70px;
     background: rgb(233, 222, 222);
-    border-bottom: 2px solid blue;}
+    border-bottom: 2px solid rgb(109, 109, 206);}
 .logo {
     float: left;}
 /*this is for ul tag */
@@ -210,7 +210,7 @@ body{
     transition: 0.5s;}
 .container1 .card .face.face1 {
     position: relative;
-    background: rgb(190, 189, 189);
+    background: rgb(146, 123, 123);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,8 +278,45 @@ body{
     display: grid;
 }
 
-.videotext h1{width: 60%;}
-.videotext p{width: 60%;}
+.videotext h1{width: 70%;}
+.videotext p{width: 70%;}
 
 .gradient2 {
     background: linear-gradient(180deg, white, rgb(236, 227, 227));}
+
+.group4 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.group4 h1{text-align: center;}
+.group4 p {width: 80%;}
+.group4 img {width:70%; height: 70%; margin-top: 5%;}
+.group4 .card2 {
+    background: white;
+    display: flex;
+    width: 40%; margin-right: 40px;}
+.group4 .twocards {margin-left: 15%; display: flex; padding: 30px;}
+
+.videotext2 h1{width: 80%;}
+.videotext2 p{width: 80%;}
+
+.group5{background: white; display: flex;}
+.group5 img {width: 20%;}
+
+
+
+
+
+
+.footer {
+    display: flex;
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(233, 222, 222);
+    color: white;
+    text-align: center;
+    border-top: 2px solid rgb(109, 109, 206);
+  }
