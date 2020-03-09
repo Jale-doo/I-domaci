@@ -31,15 +31,19 @@ body{
 .menu li a{
     text-decoration: none;
     text-align: center;
-    font-family: consolas;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(47, 47, 161);
     display: block;}
 .menu li:hover{
-    background: rgb(204, 181, 181);}
+    background: rgb(204, 181, 181);
+}
 .menu li a:hover{
-    color: #fff;}
+    color: #fff;
+    color: rgb(13, 13, 71);
+    font-weight: bold;}
 .shoppingcart{
     width: 50px;
     position:center;}
@@ -210,7 +214,7 @@ body{
     transition: 0.5s;}
 .container1 .card .face.face1 {
     position: relative;
-    background: rgb(146, 123, 123);
+    background: rgb(190, 189, 189);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,14 +313,49 @@ body{
 
 
 
+.group6 {
+    display: grid;}
+
+.group6 .menuu {
+    width: 200px;
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-bottom: 50px;}
+  
+.group6 .menuu a {
+    background-color: rgb(236, 227, 227);
+    color: rgb(80, 78, 83);
+    display: block;
+    padding: 12px;
+    text-decoration: none;}
+
+#toppicks {
+    color: rgb(19, 16, 49);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;}
+
+.group6 .menuu a:hover {
+background-color: #ccc;
+color: rgb(19, 16, 49);
+font-weight: bold;}
+
+.group6 .menuu a.active {
+background-color: rgb(233, 222, 222);
+color: rgb(19, 16, 49);}
+
 .footer {
-    display: flex;
+    display: grid;
     position: bottom;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(233, 222, 222);
-    color: white;
+    color: rgb(127, 136, 145);
     text-align: center;
     border-top: 2px solid rgb(109, 109, 206);
+  }
+
+  .footer .content {
+      margin-top: 20px;
+      display: flex;
   }
